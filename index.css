@@ -173,6 +173,21 @@ img {
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
+#about-body-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#learn-more {
+    background-color: #f5f4f0;
+    color: #a78f83;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
+        0px 2px 4px rgba(0,0,0,0.1), 
+        0px 4px 8px rgba(0,0,0,0.1), 
+        0px 8px 16px rgba(0,0,0,0.1);
+    padding: 25px;
+}
 
 .about-front, 
 .about-back {
@@ -227,14 +242,27 @@ img {
 
 #about-body-2-right {
     flex: 1;
+    background-color: #f5f4f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
+        0px 2px 4px rgba(0,0,0,0.1), 
+        0px 4px 8px rgba(0,0,0,0.1), 
+        0px 8px 16px rgba(0,0,0,0.1);
 }
+
+#about-to-experience {
+    text-decoration: none;
+    color: #a78f83;
+}
+
 
 #experience-descriptions li {
     text-align: left;
     margin-right: 20px;
 }
 
-.icon-wrapper img{
+.icon-wrapper img {
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
         0px 2px 4px rgba(0,0,0,0.1), 
@@ -265,7 +293,7 @@ img {
     background-color: #f5f4f0;
     background-size: cover;
     background-position: center;
-    height: 235px;
+    height: 250px;
     overflow:scroll;
     border: solid white;
     border-radius: 30px;
@@ -274,3 +302,22 @@ img {
             0px 4px 8px rgba(0,0,0,0.1), 
             0px 8px 16px rgba(0,0,0,0.1);
 }
+
+.project-card {
+    margin: 10px;
+}
+
+.popup {
+    background-color: #f5f4f0;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    overflow:scroll;
+    border: solid white;
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
+            0px 2px 4px rgba(0,0,0,0.1), 
+            0px 4px 8px rgba(0,0,0,0.1), 
+            0px 8px 16px rgba(0,0,0,0.1);
+}
+
