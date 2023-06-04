@@ -123,6 +123,7 @@ img {
 
 #project-card-wrapper {
     position: relative;
+    height: 100vh;
 }
 
 .project-card {
@@ -354,6 +355,20 @@ img {
 
 }
 
+.popup-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.popup-header-container p {
+    flex: 1;
+    margin-bottom: 0px;
+}
+
+.popup-header-container span {
+    margin-left: auto;
+}
+
 #popup-philakit button {
     background-color: #92bf89;
     color: white;
@@ -386,7 +401,32 @@ img {
     text-decoration: none;
 }
 
+.close-popup {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
 .button-container {
     text-align: center;
 }
+
+#project-card-to-connect {
+    display: flex;
+    background-color: #f5f4f0;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-card-to-connect a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+
+#connect-icons {
+    display: flex;
+    
+}
+
 

@@ -15,7 +15,7 @@
     <header>
         <nav id="nav-bar">
             <ul id="nav-links">
-                <li><a href="#about" class="scroll">about</a></li>
+                <li><a href="#intro" class="scroll">about</a></li>
                 <li><a href="#experience" class="scroll">experience</a></li>
                 <li><a href = "#projects" class="scroll">projects</a></li>
                 <li><a href="#connect" class="scroll">connect</a></li>
@@ -60,7 +60,6 @@
                     <div id="about-body-2-right">
                         <a id="about-to-experience" role="button" href="#experience" class="scroll">take a look at some of my experiences! they've all been at firms that aim to promote accessibility and positivity through tech</a>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -104,7 +103,10 @@
             <div id="project-card-roomiez" class="project-card" onclick="showPopup('roomiez')"></div>
             <div class="popup" id="popup-roomiez">
                 <div class="popup-content">
-                    <h3 style="color: #805478;">roomiez</h3>
+                    <div class="popup-header-container">
+                        <p style="color: #805478; font-size: x-large;">roomiez</p>
+                        <span style="text-align: right;" class="close-popup" onclick="hidePopup('roomiez')">&times;</span>
+                    </div>
                     <p>A full-stack web application with user-authentication and login functionality that allows users to join groups of other users and manage the collective’s outgoing tasks. With visualizations such as a kanban-style board and email reminder capabilities, Roomiez is the ideal solution for handling roommate responsibilities and easing conflict. </p>
                     <p><span style="font-weight: bold; color: #805478;">Skills & Technologies:</span> Spring, Spring-Data-JPA, Maven, React, AWS</p>
                    
@@ -119,30 +121,34 @@
                             <button>Devpost</button>
                         </a>
                     </div>
-                    
-                    <span class="close-popup" onclick="hidePopup('roomiez')">&times;</span>
                 </div>
             </div>
             <div id="project-card-philakit" class="project-card" onclick="showPopup('philakit')"></div>
             <div class="popup" id="popup-philakit">
                 <div class="popup-content">
-                    <h3 style="color: #92bf89;">philakit</h3>
+                    <div class="popup-header-container">
+                        <p style="color: #92bf89; font-size: x-large;">philakit</p>
+                        <span class="close-popup" onclick="hidePopup('philakit')">&times;</span>
+                    </div>
                     <p>A web application and Google Chrome extension that leverages web scraping methodologies and an ESG API to notify consumers of the environmental impact the businesses they support have. </p>
                     <p><span style="font-weight: bold; color: #92bf89;">Skills & Technologies:</span> Flask, BeautifulSoup, Chrome DevTools, React, Firebase</p>
-                    
                     <div class="button-container">
+                        <a href="https://github.com/chelyfern/philakit" target="blank_">
+                            <button>Source Code</button>
+                        </a>
                         <a href="https://devpost.com/software/philakit" target="blank_">
                             <button>Devpost</button>
                         </a>
-                    </div>
-                    
-                    <span class="close-popup" onclick="hidePopup('philakit')">&times;</span>
+                    </div> 
                 </div>
             </div>
             <div id="project-card-shift" class="project-card" onclick="showPopup('shift')"></div>
             <div class="popup" id="popup-shift">
                 <div class="popup-content">
-                    <h3 style="color: #b082e0;">Shift SC Website (Depreciated)</h3>
+                    <div class="popup-header-container">
+                        <p style="color: #b082e0; font-size: x-large;">Shift SC Website (Depreciated)</p>
+                        <span class="close-popup" onclick="hidePopup('shift')">&times;</span>
+                    </div>
                     <p>Before migrating to Squarespace, I built the website for Shift SC as part of the founding team and Executive Board. Chose to leverage Ruby as a starting point for development given its clean syntax and readability.</p>
                     <p><span style="font-weight: bold; color: #b082e0;">Skills & Technologies:</span> Ruby, HTML/SCSS, Github Pages</p>
                     <div class="button-container">
@@ -150,16 +156,19 @@
                             <button>Shift SC Website</button>
                         </a>
                     </div>
-                    
-                    
                 </div>
+            </div>
+            <div id="project-card-to-connect" class="project-card">
+                <a href = "#connect" class="scroll">Let's Connect!</a>
             </div>
         </div>
     </div>
 
     <div id="connect">
-        <h2 id="connect-header">Let's Connect!</h2>
-        <h3 id="connect-description">I'd love to chat about all things web development, environmentalism, sustainability, walking, running, nature ... you name it. Please reach out on any platform you feel comfortable :^)</h3>
+        <div id="connect-description-wrapper">
+            <p id="connect-description">I'd love to chat about all things web development, environmentalism, sustainability, walking, running, nature ... you name it. Please reach out on any platform you feel comfortable :^)</h3>
+        </div>
+        
         <div id="connect-icons">
             <div class="icon-wrapper">
                 <a href="https://www.linkedin.com/in/karfania/" target="blank_">
