@@ -1,8 +1,8 @@
 body {
-    font-family: 'Clorin', sans-serif;    
-    background-color: #f5f4f0;      
+    font-family: 'Clorin', sans-serif;
+    background-color: #f5f4f0;
     padding: 0px;
-    margin: 0px;                                  
+    margin: 0px;
 }
 
 #nav-bar {
@@ -32,10 +32,14 @@ body {
 #nav-links a {
     text-decoration: none;
     padding: 5px 10px;
-    color:#a78f83;
+    color: #a78f83;
 }
 
-#intro, #about, #experience, #projects, #connect {
+#intro,
+#about,
+#experience,
+#projects,
+#connect {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,13 +53,13 @@ body {
     background-size: cover;
     background-position: center;
     height: 50vh;
-    overflow:scroll;
+    overflow: scroll;
     border: solid white;
     border-radius: 30px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-            0px 2px 4px rgba(0,0,0,0.1), 
-            0px 4px 8px rgba(0,0,0,0.1), 
-            0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 #intro-text {
@@ -99,21 +103,21 @@ body {
     justify-content: center;
     height: 100vh;
     padding: 50px;
-
+    text-align: center;
 }
-  
+
 #experience-icons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-  
+
 .icon-wrapper {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
 }
-  
+
 img {
     width: 125px;
     height: 125px;
@@ -122,15 +126,10 @@ img {
 }
 
 #project-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
-    height: 100vh;
-}
-
-.project-card {
-    width: 50px;
-    height: 50px;
-    background-color: #ccc;
-    cursor: pointer;
+    column-gap: 20px;
 }
 
 .popup {
@@ -174,27 +173,29 @@ img {
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
+
 #about-body-1 {
     display: flex;
     flex-direction: column;
 }
 
 #learn-more {
+    cursor: pointer;
     background-color: #f5f4f0;
     color: #a78f83;
     border-radius: 10px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-        0px 2px 4px rgba(0,0,0,0.1), 
-        0px 4px 8px rgba(0,0,0,0.1), 
-        0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
     padding: 25px;
 }
 
-.about-front, 
+.about-front,
 .about-back {
     position: absolute;
     width: 100%;
-    height: auto;
+
     backface-visibility: hidden;
     display: flex;
     align-items: center;
@@ -204,13 +205,13 @@ img {
 
     background-color: #a78f83;
     border-radius: 10px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-        0px 2px 4px rgba(0,0,0,0.1), 
-        0px 4px 8px rgba(0,0,0,0.1), 
-        0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
     padding: 35px;
-    width:70vw;
-    
+    height: 50vh;
+    width: 70vw;
 }
 
 .about-front {
@@ -238,7 +239,11 @@ img {
 }
 
 #about-body-2 img {
-    border-radius: 10px;;
+    border-radius: 10px;
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
 }
 
 #about-body-2-right {
@@ -246,10 +251,10 @@ img {
     background-color: #f5f4f0;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-        0px 2px 4px rgba(0,0,0,0.1), 
-        0px 4px 8px rgba(0,0,0,0.1), 
-        0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 #about-to-experience {
@@ -265,10 +270,10 @@ img {
 
 .icon-wrapper img {
     border-radius: 10px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-        0px 2px 4px rgba(0,0,0,0.1), 
-        0px 4px 8px rgba(0,0,0,0.1), 
-        0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .icon-wrapper {
@@ -295,26 +300,25 @@ img {
     background-size: cover;
     background-position: center;
     height: 250px;
-    overflow:scroll;
+    overflow: scroll;
     border: solid white;
     border-radius: 30px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-            0px 2px 4px rgba(0,0,0,0.1), 
-            0px 4px 8px rgba(0,0,0,0.1), 
-            0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .project-card {
     margin: 10px;
-    width: 80vh;
+    width: 60vh;
     height: 15vh;
     border: solid white;
     border-radius: 10px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-            0px 2px 4px rgba(0,0,0,0.1), 
-            0px 4px 8px rgba(0,0,0,0.1), 
-            0px 8px 16px rgba(0,0,0,0.1);
-    margin-bottom: 25px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .popup {
@@ -322,12 +326,12 @@ img {
     background-size: cover;
     background-position: center;
     height: 250px;
-    overflow:scroll;
+    overflow: scroll;
     border-radius: 30px;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-            0px 2px 4px rgba(0,0,0,0.1), 
-            0px 4px 8px rgba(0,0,0,0.1), 
-            0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 #project-card-philakit {
@@ -386,14 +390,14 @@ img {
 
 .popup-content button {
     font-family: 'Clorin', sans-serif;
-    font-weight:lighter;  
+    font-weight: lighter;
     margin-right: 10px;
     border-radius: 6px;
     border: white solid;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
-            0px 2px 4px rgba(0,0,0,0.1), 
-            0px 4px 8px rgba(0,0,0,0.1), 
-            0px 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
     padding: 5px;
 }
 
@@ -421,12 +425,24 @@ img {
 #project-card-to-connect a {
     text-decoration: none;
     color: black;
-    font-size: 50px;
+    font-size: 2vw;
+}
+
+#connect-description-wrapper {
+    background-color: #f5f4f0;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    overflow: scroll;
+    border: solid white;
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
+
 }
 
 #connect-icons {
     display: flex;
-    
 }
-
-
