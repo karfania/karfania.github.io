@@ -7,7 +7,9 @@
     <link href="https://fonts.cdnfonts.com/css/red-square" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/clorin" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </head>
 
@@ -142,6 +144,23 @@
                     </div> 
                 </div>
             </div>
+            <div id="project-card-sudoku-go" class="project-card" onclick="showPopup('sudoku-go')"></div>
+            <div class="popup" id="popup-sudoku-go">
+                <div class="popup-content">
+                    <div class="popup-header-container">
+                        <p style="color: #8dc6ff; font-size: x-large;">sudoku-go</p>
+                        <span class="close-popup" onclick="hidePopup('sudoku-go')">&times;</span>
+                    </div>
+                    <p>Currently working on a web-based Sudoku game with difficulty selection, a board-state checker, and backtracing solver. Exploring Golang by writing its back-end with the language, including a Gin API layer. Looking to delve into advanced Sudoku solution strategies after deployment.</p>
+                    <p><span style="font-weight: bold; color: #8dc6ff;">Skills & Technologies:</span> Golang, Gin, TypeScript, React, Heroku</p>
+                    <div class="button-container">
+                        <a href="https://github.com/karfania/sudoku-go" target="blank_">
+                            <button>Source Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div id="project-card-shift" class="project-card" onclick="showPopup('shift')"></div>
             <div class="popup" id="popup-shift">
                 <div class="popup-content">
@@ -158,9 +177,11 @@
                     </div>
                 </div>
             </div>
-            <div id="project-card-to-connect" class="project-card">
-                <a href = "#connect" class="scroll">Let's Connect!</a>
-            </div>
+            
+        </div>
+
+        <div id="project-card-to-connect" class="project-card">
+            <a href = "#connect" class="scroll">Let's Connect!</a>
         </div>
     </div>
 
@@ -169,20 +190,29 @@
             <p id="connect-description">I'd love to chat about all things web development, environmentalism, sustainability, walking, running, nature ... you name it. Please reach out on any platform you feel comfortable :^)</h3>
         </div> -->
         
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="karfania" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/karfania?trk=profile-badge"></a></div>
+              
         <div id="connect-icons">
-            <div class="icon-wrapper">
+            <!-- <div class="icon-wrapper">
                 <a href="https://www.linkedin.com/in/karfania/" target="blank_">
                     <img src="media/linkedin_logo.png" alt="LinkedIn">
                 </a>
-            </div>
-            <div class="icon-wrapper">
+            </div> -->
+             
+            <!-- <div class="icon-wrapper">
                 <a href="https://github.com/karfania" target="blank_">
                     <img src="media/github_logo.png" alt="GitHub">
                 </a>
-            </div>
+            </div> -->
         </div>
 
     </div>
+
+    <footer>
+        <p>© 2023 Kourosh Arfania</p>
+    </footer>
+
+
     <script src="index.js"></script>
 </body>
 

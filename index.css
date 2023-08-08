@@ -1,8 +1,27 @@
+@font-face { font-family: DMSans; src: url('media/fonts/DMSans-VariableFont_opsz\,wght.ttf'); } 
+@font-face { font-family: Notable; src: url('media/fonts/Notable-Regular.ttf'); } 
+
 body {
     font-family: 'Clorin', sans-serif;
     background-color: #f5f4f0;
     padding: 0px;
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    /* margin-top: auto; */
+    background-color: rgba(233, 231, 222, 0.95);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    color: #a78f83
+}
+
+footer p {
+    text-align: center;
 }
 
 #nav-bar {
@@ -84,12 +103,13 @@ body {
 }
 
 #intro-name {
-    font-family: 'Red Square', sans-serif;
+    /* font-family: 'Red Square', sans-serif; */
+    font-family: Notable;
     color: #a78f83;
-    font-size: 65px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 800px;
     line-height: 64px;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 #intro-subtitle {
@@ -350,6 +370,14 @@ img {
     background-position: center;
 }
 
+#project-card-sudoku-go {
+    background-image: url('media/sudoku-go_title.png');
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #project-card-shift {
     background-image: url('media/shift_title.png');
     background-size: contain;
@@ -380,6 +408,11 @@ img {
 
 #popup-roomiez button {
     background-color: #805478;
+    color: white;
+}
+
+#popup-sudoku-go button {
+    background-color: #8dc6ff;
     color: white;
 }
 
